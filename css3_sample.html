@@ -1,0 +1,30 @@
+<html>
+  <header>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #000;
+      transition: all 300ms 0s ease;
+    }
+    .box:hover {
+      background: #ccc;
+      width: 300px;
+    }
+
+    p {
+        font-family:myFont;
+    }
+
+    @font-face {    /*独自フォント宣言*/
+        font-family: myFont;    /*独自フォント名*/
+        src: url('XXXX_font.ttf'),  /*URL指定*/
+                url('XXXX_font.eot');
+    }
+  </style>
+  </header>
+  <body>
+    <div class="box"></div>
+    <p>テキストの表示</p>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <article>
+        <h1>アンケートフォーム</h1>
+        <p>下記入力フォームよりアンケートのご入力をお願いします。</p>
+        
+        <form action="#" method="post">
+            <p><label>お名前（必須）<br>
+            <input type="text" name="name" required></label></p>
+            <p><label>メールアドレス（必須）<br>
+            <input type="email" name="email"></label></p>
+            <!--入力が見えない-->
+            <p><label>パスワード（必須）<br>
+            <input type="password" name="password"></label></p>
+
+            <p>性別<br>
+                <label><input type="radio" name="gender" value="male">男性</label>
+                <label><input type="radio" name="gender" value="female" disabled>女性</label>
+            </p>
+
+            <p>お住まい<br>
+                <label><input type="checkbox" name="from" value="toyko" disabled>東京</label>
+                <label><input type="checkbox" name="from" value="osaka">大阪</label>
+                <label><input type="checkbox" name="form" value="kanagawa">神奈川</label>
+            </p>
+
+            <p><input type="submit" value="送信"></p>
+        </form>
+    </article>
+    
+    
+</body>
+</html>

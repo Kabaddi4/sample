@@ -1,0 +1,21 @@
+#content {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header,
+#footer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+#content div#side_area {
+    width: 50%;
+}
+
+#content div#main_area {
+    width: 50%;
+}
