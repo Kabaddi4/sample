@@ -1,7 +1,17 @@
-let str = '12345';
+let bottom = 6;
 
-console.log(str + ':' + typeof(str));
+let height = 5;
 
-let n = parseInt(str);
+//関数名あり
+function calc_triangle(x, y) {
+    return x * y / 2;
+}
+console.log(calc_triangle(bottom, height));
 
-console.log(n + ' : ' + typeof(n));
+//関数名なし
+var triangle_area = function(num1, num2) {
+    let area = num1 * num2 / 2;
+    return area;
+}
+
+console.log(triangle_area(bottom, height));
