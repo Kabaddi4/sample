@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+    <input type="text" id="text1">
+    <p>:<span id="msg"></span></p>
+
+    <script>
+        let input_text = document.getElementById('text1');
+        let Msg = document.getElementById('msg');
+
+        input_text.addEventListener('blur', function() {
+            Msg = input_text;
+            console.log(Msg);
+        })
+    </script>
+</body>
+</html>
