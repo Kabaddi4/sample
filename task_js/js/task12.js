@@ -1,11 +1,6 @@
-const x = document.getElementById('input_text');
-x.addEventListener('blur', function() {
-    let span = document.getElementById('msg');
-    span.classList.remove('hidden');
+const input = document.getElementById("text");
+const output = document.getElementById('msg');
+
+input.addEventListener("blur", function() {
+    output.textContent = input.value;
 })
-
-/*const message = document.getElementById('msg');
-
-message.addEventListener('blur', function() {
-    console.log("end input");
-});*/
