@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <select v-model="msged">
+    <option v-for="msg in msgs" :value="msg">{{ msg }}</option>
+  </select> 
+  
+  <script src="js/task20.js" charset="UTF-8"></script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.11/dist/vue.js"></script></script>
+</head>
+<body>
+    <div id="app">{{ msg }}</div>
+  <script src="js/task20.js" charset="UTF-8"></script>
+</body>
+</html>-->
