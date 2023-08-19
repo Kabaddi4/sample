@@ -16,12 +16,12 @@ $(function () {
         })
         //成功
         .done(function (res) {
-            console.log(res);       
+            console.log(res.core);       
             $('#apod-image').attr('src', res.url);
             $('#apod-title').html(res.title);
             $('#apod-desc').html(res.explanation);
             $('#apod-date').html(res.date);
-                       
+            $('#apod-copy').html(res.copyright);          
         })
         //失敗
         .fail(function (res) {
