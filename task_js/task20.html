@@ -5,10 +5,13 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-  <select v-model="msged">
-    <option v-for="msg in msgs" :value="msg">{{ msg }}</option>
+<div id="app">
+  <!---->
+  <select v-model="SelectMess">
+    <option v-for="(msg, index) in msgs" :key="index" :value="msg">{{ msg }}</option>
   </select> 
-  
+  <p>{{ SelectMess }}</p>
+</div>
   <script src="js/task20.js" charset="UTF-8"></script>
 </body>
 </html>

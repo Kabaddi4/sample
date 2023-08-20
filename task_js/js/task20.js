@@ -1,6 +1,8 @@
 let app = new Vue({
     el:'#app',             
-    data:{ msgs:["おはよう","こんばんは","お元気ですか"]}
+    data:{ 
+        SelectMess: '', //selectboxで設定したデータを格納
+        msgs:["おはよう","こんばんは","お元気ですか"]}
   });
 
 /*let initApp = {
