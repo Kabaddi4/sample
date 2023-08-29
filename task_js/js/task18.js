@@ -1,12 +1,6 @@
 let itemList = [];
 
-let cate1 =[
-    '---',
-    '家具',
-    'ベッド・マットレス',
-    '収納家具・収納グッズ',
-    '子ども家具'
-];
+let cate1 =[];
 
 let cate2 = [];
 
@@ -88,11 +82,13 @@ cate2Element.addEventListener('change', function(){
 
 $(function () {
     $.ajax({
-        url: 'json./item.json', //jsファイル読み込みと似てる。
+        url: 'json./sample.json', //jsファイル読み込みと似てる。
         dataType: 'json'
     })
     .done(function (data) {
-        itemList = data;
+        cate1 = data.cate1;
+        cate2 = data.cate2;
+        itemList = data.items;
 
         setMainMenu();
     })
